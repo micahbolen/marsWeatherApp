@@ -9,8 +9,8 @@
  */
 angular.module('marsWeatherAppApp')
   .controller('MainCtrl', function () {
-    $scope.latestReport = [];
-    $scope.error = [];
+    $scope.latestReport = {};
+    $scope.error = {};
     
     $http.get('http://marsweather.ingenology.com/v1/latest/').
       then(function(response) {
